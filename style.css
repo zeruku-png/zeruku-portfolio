@@ -31,8 +31,13 @@ header h1 {
     font-size: 35px;
 }
 
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
 header #clock {
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 3px;
     color: #b1b1b1;
     width: 100%;
@@ -40,20 +45,26 @@ header #clock {
     text-align: center;
 }
 
-.card-1 {
+.card-column-1 {
     display: flex;
     justify-content: flex-start;
     gap: 40px;
     margin: 50px;
 }
 
-.card-1 .profile-card {
-    width: 25%;
+.status-card,
+.bio-card {
     background-color: #424454;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card-1 .profile-card .banner {
+.status-card {
+    width: 25%;
+}
+
+.status-card .banner {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 15vw;
@@ -61,7 +72,7 @@ header #clock {
     object-fit: cover;
 }
 
-.card-1 .profile-card .icon {
+.status-card .icon {
     border-radius: 50%;
     width: 30%;
     margin-left: 10%;
@@ -71,87 +82,43 @@ header #clock {
     border-top: solid 1px #3a4048;
 }
 
-.card-1 .profile-card .status {
+.statuses {
+    padding: 0 100px 20px;
+    color: #bababa;
     font-size: 30px;
-    color: #bababa;
-    margin-left: 15%;
-    margin-top: 15px;
 }
 
-.card-1 .profile-card .status-sub {
-    font-size: 16px;
+.status,
+.twitter {
+    padding-bottom: 10px;
+}
+
+.status-title,
+.twitter-title {
     color: #55828a;
-    margin-left: 55px;
-    margin-top: -38px;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 0;
 }
 
-.card-1 .profile-card .status-icon {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: #409eff;
-    margin-top: 20px;
+.status-message,
+.twitter-link {
+    margin: 0.2em 0;
 }
 
-.card-1 .profile-card .status .status-main {
-    font-size: 25px;
-    color: #bababa;
-    margin-left: 55px;
-    margin-top: -12px;
+.twitter-link {
     display: block;
-}
-
-
-.card-1 .profile-card .twitter {
-    font-size: 30px;
-    color: #bababa;
-    margin-left: 15%;
-    padding-bottom: 20px;
-}
-
-.card-1 .profile-card .twitter .twitter-logo {
-    width: 30px;
-    border-radius: 50%;
-}
-
-.card-1 .profile-card .twitter .twitter-sub {
-    font-size: 16px;
-    color: #55828a;
-    margin-left: 55px;
-    margin-top: -38px
-}
-
-.card-1 .profile-card .twitter .twitter-link {
-    font-size: 25px;
-    color: #bababa;
-    margin-left: 55px;
-    margin-top: -12px;
-    display: block;
-}
-
-.card-1 .profile-card .twitter .twitter-link a {
     color: inherit;
     text-decoration: none;
 }
 
-.card-1 .bio-card {
-    background-color: #424454;
+.bio-card {
     width: 45%;
-    border-radius: 15px;
-    padding: 25px;
-    padding-top: -25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-1 .bio-card .bio-title {
-    font-size: 16px;
-    color: #55828a;
-    margin: 0px 0px;
-}
-
-.card-1 .bio-card .bio-content {
+    padding: 20px 35px;
     color: #bababa;
-    letter-spacing: 0.6px;
-    line-height: 25px;
+}
+
+.bio-card .bio-title {
+    font-size: 18px;
+    color: #55828a;
 }
