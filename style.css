@@ -45,24 +45,39 @@ header #clock {
     text-align: center;
 }
 
-.card-column-1 {
+.card-column-1,
+.card-column-2 {
     display: flex;
-    justify-content: flex-start;
-    gap: 40px;
+    justify-content: space-between;
     margin: 50px;
 }
 
 .status-card,
-.bio-card {
+.bio-card,
+.location-card,
+.language-card,
+.urls-card,
+.badges-card,
+.groups-card {
     background-color: #424454;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
-.status-card {
-    width: 25%;
+.status-card,
+.location-card {
+    width: 23%;
 }
+
+.language-card,
+.urls-card,
+.badges-card,
+.groups-card {
+    width: 22.9375%
+}
+
 
 .status-card .banner {
     border-top-left-radius: 15px;
@@ -83,7 +98,7 @@ header #clock {
 }
 
 .statuses {
-    padding: 0 100px 20px;
+    padding: 0 50px 20px 125px;
     color: #bababa;
     font-size: 30px;
 }
@@ -94,7 +109,8 @@ header #clock {
 }
 
 .status-title,
-.twitter-title {
+.twitter-title,
+.language-title {
     color: #55828a;
     font-size: 18px;
     margin-top: 18px;
@@ -113,12 +129,63 @@ header #clock {
 }
 
 .bio-card {
-    width: 45%;
+    width: 48.5%;
     padding: 20px 35px;
     color: #bababa;
 }
 
-.bio-card .bio-title {
+.bio-title, .location-title {
     font-size: 18px;
     color: #55828a;
+}
+
+.bio-card .bio-content {
+    color:#BABABA;
+    font-size: 24px;
+}
+
+.bio-content {
+    margin: 12px 0;
+}
+
+.location-card {
+    padding: 20px 0;
+}
+
+.location-title {
+    padding: 0 20px;
+}
+
+.map-embed {
+    margin: 12px 0;
+}
+
+.instance-info {
+    font-size: 24px;
+    padding: 0 24px;
+    color: #bababa;
+}
+
+.instance-id {
+    padding-left: 40px;
+}
+
+.language-card {
+    padding: 20px 35px;
+}
+
+.language-badges {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.language-jpn {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: RGB(36, 38, 47);
+    text-align: center;
+    line-height: 90px;
+    color: #bababa;
+    font-size: 24px;
 }

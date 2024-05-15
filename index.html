@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ぜるーくどっとこむ</title>
+        <meta name="description" content="ぜるくのポートフォリオ的な" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ぜるーくどっとこむ</title>
-    <meta name="description" content="ぜるくのポートフォリオ的な" />
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <body>
+        <header>
+            <h1><a href="#">zeruku</a></h1>
+            <p id="clock"></p>
+            <script src="./scripts/clock.js"></script>
+        </header>
 
-<body>
-    <header>
-        <h1><a href="#">zeruku</a></h1>
-        <p id="clock">00:00</p>
-        <script src="./scripts/clock.js"></script>
-    </header>
-
-    <main>
-        <div class="card-column-1">
-            <!-- Status Card -->
-            <div class="status-card">
-                <img class="banner"
-                    src="https://api.vrchat.cloud/api/1/image/file_09ceb39b-e39b-48e8-b39c-53ff4570bbea/1/1024"
-                    alt="" />
-                <img class="icon" src="https://pbs.twimg.com/profile_images/1785673372900392960/DMKM-MD__400x400.jpg"
-                    alt="" />
-                <div class="statuses">
-                    <div class="status">
-                        <p class="status-title">STATUS</p>
-                        <p class="status-message">Studying HTML</p>
+        <main>
+            <div class="card-column-1">
+                <!-- Status Card -->
+                <div class="status-card">
+                    <img
+                        class="banner"
+                        src="https://api.vrchat.cloud/api/1/image/file_09ceb39b-e39b-48e8-b39c-53ff4570bbea/1/1024"
+                        alt=""
+                    />
+                    <img
+                        class="icon"
+                        src="https://pbs.twimg.com/profile_images/1785673372900392960/DMKM-MD__400x400.jpg"
+                        alt=""
+                    />
+                    <div class="statuses">
+                        <div class="status">
+                            <p class="status-title">STATUS</p>
+                            <p class="status-message">Studying HTML</p>
+                        </div>
+                        <div class="twitter">
+                            <p class="twitter-title">TWITTER</p>
+                            <a
+                                class="twitter-link"
+                                href="https://x.com/zerukuVRC"
+                                target="_blank"
+                                ><u>@zerukuVRC</u></a
+                            >
+                        </div>
                     </div>
-                    <div class="twitter">
-                        <p class="twitter-title">TWITTER</p>
-                        <a class="twitter-link" href="https://x.com/zerukuVRC"><u>@zerukuVRC</u></a>
+                </div>
+                <!-- Bio Card -->
+                <div class="bio-card">
+                    <p class="bio-title">BIO</p>
+                    <p class="bio-content">This Is Bio. This Is Bio.</p>
+                </div>
+                <!-- Location Card -->
+                <div class="location-card">
+                    <p class="location-title">LOCATION</p>
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25948.74491525558!2d139.7141072534951!3d35.613102136063034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a622d707eed%3A0x7d44bb1b33343845!2z5p2x5Lqs6YO95ZOB5bed5Yy6!5e0!3m2!1sja!2sjp!4v1715747070931!5m2!1sja!2sjp"
+                            width="100%"
+                            height="300"
+                            style="border: 0; border-radius: 15px 15px 0 0"
+                            allowfullscreen="False"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="instance-info">
+                        <p class="location-content">東京都 品川区</p>
+                        <p class="instance-id">#real - Public</p>
                     </div>
                 </div>
             </div>
-            <!-- Bio Card -->
-            <div class="bio-card">
-                <p class="bio-title">BIO</p>
-                <p>This Is Bio. This Is Bio.</p>
+            <div class="card-column-2">
+                <div class="language-card">
+                    <p class="language-title">LANGUAGES</p>
+                    <div class="language-badges">
+                        <p class="language-jpn">JPN</p>
+                    </div>
+                </div>
+                <div class="urls-card"></div>
+                <div class="badges-card"></div>
+                <div class="groups-card"></div>
             </div>
-            <!-- Location Card -->
-            <div class="location-card">
-                <p class="location-title">LOCATION</p>
-                <!-- TODO: Google Mapの埋め込み -->
-                <p>東京都 品川区</p>
-                <p>#real - Public</p>
-            </div>
-        </div>
-        <div class="card-column-2"></div>
-    </main>
-</body>
-
+        </main>
+    </body>
 </html>

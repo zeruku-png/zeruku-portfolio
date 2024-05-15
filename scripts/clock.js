@@ -16,4 +16,5 @@ function showClock() {
     document.getElementById("clock").innerHTML = msg
 }
 
+showClock()
 setInterval('showClock()', 1000)
