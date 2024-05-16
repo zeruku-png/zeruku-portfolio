@@ -110,7 +110,10 @@ header #clock {
 
 .status-title,
 .twitter-title,
-.language-title {
+.language-title,
+.urls-title,
+.badges-title,
+.groups-title {
     color: #55828a;
     font-size: 18px;
     margin-top: 18px;
@@ -170,7 +173,10 @@ header #clock {
     padding-left: 40px;
 }
 
-.language-card {
+.language-card,
+.urls-card,
+.badges-card,
+.groups-card {
     padding: 20px 35px;
 }
 
