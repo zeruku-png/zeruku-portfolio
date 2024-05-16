@@ -4,7 +4,7 @@
 }
 
 body {
-    padding-top: 60px;
+    padding: 60px 50px;
     background-color: #101419;
     font-family: "源泉丸ゴシック";
 }
@@ -46,10 +46,12 @@ header #clock {
 }
 
 .card-column-1,
-.card-column-2 {
+.card-column-2,
+.learned-column-1,
+.works-column-1 {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px 0;
 }
 
 .status-card,
@@ -220,4 +222,65 @@ header #clock {
     width: 90px;
     height: 90px;
     border-radius: 50%;
+}
+
+.learned-title,
+.works-title {
+    color: RGB(45, 101, 113);
+    font-size: 40px;
+    margin: 100px 0 40px;
+}
+
+.learned-1,
+.learned-2,
+.learned-3,
+.learned-4,
+.learned-5,
+.work-1,
+.work-2,
+.work-3,
+.work-4,
+.work-5 {
+    width: 18%;
+    height: 300px;
+    background-color: #424454;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.learned-1-banner,
+.learned-2-banner,
+.learned-3-banner,
+.learned-4-banner,
+.learned-5-banner,
+.work-1-banner,
+.work-2-banner,
+.work-3-banner,
+.work-4-banner,
+.work-5-banner {
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.learned-1-title,
+.learned-2-title,
+.learned-3-title,
+.learned-4-title,
+.learned-5-title,
+.work-1-title,
+.work-2-title,
+.work-3-title,
+.work-4-title,
+.work-5-title {
+    height: 90px;
+    text-align: center;
+    color: #bababa;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
