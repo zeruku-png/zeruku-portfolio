@@ -195,3 +195,29 @@ header #clock {
     color: #bababa;
     font-size: 24px;
 }
+
+.urls-badges {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.booth-badge {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.vrchat-badge {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #FFF;
+    /* object-fit: cover; */
+}
+
+.github-badge {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
