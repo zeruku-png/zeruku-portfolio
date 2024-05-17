@@ -139,13 +139,14 @@ header #clock {
     color: #bababa;
 }
 
-.bio-title, .location-title {
+.bio-title,
+.location-title {
     font-size: 18px;
     color: #55828a;
 }
 
 .bio-card .bio-content {
-    color:#BABABA;
+    color: #BABABA;
     font-size: 24px;
 }
 
