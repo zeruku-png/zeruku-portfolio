@@ -1,144 +1,220 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ぜるーくどっとこむ</title>
+        <meta name="description" content="ぜるくのポートフォリオ的な" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ぜるーくどっとこむ</title>
-    <meta name="description" content="ぜるくのポートフォリオ的な" />
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <body>
+        <header>
+            <h1><a href="#">zeruku</a></h1>
+            <p id="clock"></p>
+            <script src="./scripts/clock.js"></script>
+        </header>
 
-<body>
-    <header>
-        <h1><a href="#">zeruku</a></h1>
-        <p id="clock"></p>
-        <script src="./scripts/clock.js"></script>
-    </header>
-
-    <main>
-        <div class="card-column-1">
-            <!-- Status Card -->
-            <div class="status-card">
-                <img class="banner"
-                    src="https://api.vrchat.cloud/api/1/image/file_09ceb39b-e39b-48e8-b39c-53ff4570bbea/1/1024"
-                    alt="" />
-                <img class="icon" src="https://pbs.twimg.com/profile_images/1785673372900392960/DMKM-MD__400x400.jpg"
-                    alt="" />
-                <div class="statuses">
-                    <div class="status">
-                        <p class="status-title">STATUS</p>
-                        <p class="status-message">Studying HTML</p>
+        <main>
+            <div class="card-column-1">
+                <!-- Status Card -->
+                <div class="status-card">
+                    <img
+                        class="banner"
+                        src="https://api.vrchat.cloud/api/1/image/file_09ceb39b-e39b-48e8-b39c-53ff4570bbea/1/1024"
+                        alt=""
+                    />
+                    <img
+                        class="icon"
+                        src="https://pbs.twimg.com/profile_images/1785673372900392960/DMKM-MD__400x400.jpg"
+                        alt=""
+                    />
+                    <div class="statuses">
+                        <div class="status">
+                            <p class="status-title">STATUS</p>
+                            <p class="status-message">Studying HTML</p>
+                        </div>
+                        <div class="twitter">
+                            <p class="twitter-title">TWITTER</p>
+                            <a
+                                class="twitter-link"
+                                href="https://x.com/zerukuVRC"
+                                target="_blank"
+                                ><u>@zerukuVRC</u></a
+                            >
+                        </div>
                     </div>
-                    <div class="twitter">
-                        <p class="twitter-title">TWITTER</p>
-                        <a class="twitter-link" href="https://x.com/zerukuVRC" target="_blank"><u>@zerukuVRC</u></a>
+                </div>
+                <!-- Bio Card -->
+                <div class="bio-card">
+                    <p class="bio-title">BIO</p>
+                    <p class="bio-content">This Is Bio. This Is Bio.</p>
+                </div>
+                <!-- Location Card -->
+                <div class="location-card">
+                    <p class="location-title">LOCATION</p>
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25948.74491525558!2d139.7141072534951!3d35.613102136063034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a622d707eed%3A0x7d44bb1b33343845!2z5p2x5Lqs6YO95ZOB5bed5Yy6!5e0!3m2!1sja!2sjp!4v1715747070931!5m2!1sja!2sjp"
+                            width="100%"
+                            height="300"
+                            style="border: 0; border-radius: 15px 15px 0 0"
+                            allowfullscreen="False"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="instance-info">
+                        <p class="location-content">東京都 品川区</p>
+                        <p class="instance-id">#real - Public</p>
                     </div>
                 </div>
             </div>
-            <!-- Bio Card -->
-            <div class="bio-card">
-                <p class="bio-title">BIO</p>
-                <p class="bio-content">This Is Bio. This Is Bio.</p>
-            </div>
-            <!-- Location Card -->
-            <div class="location-card">
-                <p class="location-title">LOCATION</p>
-                <div class="map-embed">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25948.74491525558!2d139.7141072534951!3d35.613102136063034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a622d707eed%3A0x7d44bb1b33343845!2z5p2x5Lqs6YO95ZOB5bed5Yy6!5e0!3m2!1sja!2sjp!4v1715747070931!5m2!1sja!2sjp"
-                        width="100%" height="300" style="border: 0; border-radius: 15px 15px 0 0"
-                        allowfullscreen="False" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="card-column-2">
+                <div class="language-card">
+                    <p class="language-title">LANGUAGES</p>
+                    <div class="language-badges">
+                        <p class="language-jpn">JPN</p>
+                    </div>
                 </div>
-                <div class="instance-info">
-                    <p class="location-content">東京都 品川区</p>
-                    <p class="instance-id">#real - Public</p>
+                <div class="urls-card">
+                    <p class="urls-title">LINKS</p>
+                    <div class="urls-badges">
+                        <a
+                            href="https://zeruku.booth.pm"
+                            class="booth-link"
+                            target="_blank"
+                        >
+                            <img
+                                class="booth-badge"
+                                src="./images/booth.png"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://vrchat.com/home/user/usr_3f2d335e-c039-44bc-8a0b-57e5133b3d00"
+                            class="vrchat-link"
+                        >
+                            <img
+                                class="vrchat-badge"
+                                src="./images/vrchat.png"
+                                alt=""
+                        /></a>
+                        <a
+                            href="https://github.com/zeruku-png"
+                            class="github-link"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/github.png"
+                                alt=""
+                                class="github-badge"
+                        /></a>
+                    </div>
+                </div>
+                <div class="badges-card">
+                    <p class="badges-title">BADGES</p>
+                </div>
+                <div class="groups-card">
+                    <p class="groups-title">GROUPS</p>
                 </div>
             </div>
-        </div>
-        <div class="card-column-2">
-            <div class="language-card">
-                <p class="language-title">LANGUAGES</p>
-                <div class="language-badges">
-                    <p class="language-jpn">JPN</p>
+            <h2 class="learned-title">Learned Programming Language</h2>
+            <div class="learned-column-1">
+                <div class="learned-1">
+                    <img
+                        class="learned-1-banner"
+                        src="./images/Python.jpg"
+                        alt=""
+                    />
+                    <p class="learned-1-title">Python<br />専門学校&独学</p>
                 </div>
-            </div>
-            <div class="urls-card">
-                <p class="urls-title">LINKS</p>
-                <div class="urls-badges">
-                    <a href="https://zeruku.booth.pm" class="booth-link" target="_blank">
-                        <img class="booth-badge" src="./images/booth.png" alt="" />
-                    </a>
-                    <a target="_blank" href="https://vrchat.com/home/user/usr_3f2d335e-c039-44bc-8a0b-57e5133b3d00"
-                        class="vrchat-link">
-                        <img class="vrchat-badge" src="./images/vrchat.png" alt="" /></a>
-                    <a href="https://github.com/zeruku-png" class="github-link" target="_blank">
-                        <img src="./images/github.png" alt="" class="github-badge" /></a>
+                <div class="learned-2">
+                    <img
+                        src="./images/JavaScript.jpg"
+                        alt=""
+                        class="learned-2-banner"
+                    />
+                    <p class="learned-2-title">JavaScript<br />独学</p>
                 </div>
-            </div>
-            <div class="badges-card">
-                <p class="badges-title">BADGES</p>
-            </div>
-            <div class="groups-card">
-                <p class="groups-title">GROUPS</p>
-            </div>
-        </div>
-        <h2 class="learned-title">Learned Programming Language</h2>
-        <div class="learned-column-1">
-            <div class="learned-1">
-                <img class="learned-1-banner" src="./images/python.png" alt="" />
-                <p class="learned-1-title">Python<br>専門学校&独学4年</p>
-            </div>
-            <div class="learned-2">
-                <img src="./images/python.png" alt="" class="learned-2-banner" />
-                <p class="learned-2-title">JavaScript<br>独学1週間</p>
-            </div>
-            <div class="learned-3">
-                <img src="./images/python.png" alt="" class="learned-3-banner" />
-                <p class="learned-3-title">HTML5<br>専門学校&独学1週間</p>
-            </div>
-            <div class="learned-4">
-                <img src="./images/python.png" alt="" class="learned-4-banner" />
-                <p class="learned-4-title">CSS<br>専門学校&独学1週間</p>
-            </div>
-            <!-- <div class="learned-5">
+                <div class="learned-3">
+                    <img
+                        src="./images/HTML.jpg"
+                        alt=""
+                        class="learned-3-banner"
+                    />
+                    <p class="learned-3-title">HTML5<br />専門学校&独学</p>
+                </div>
+                <div class="learned-4">
+                    <img
+                        src="./images/css.jpg"
+                        alt=""
+                        class="learned-4-banner"
+                    />
+                    <p class="learned-4-title">CSS<br />専門学校&独学</p>
+                </div>
+                <!-- <div class="learned-5">
                 <img src="./images/python.png" alt="" class="learned-5-banner" />
                 <p class="learned-5-title">Not Available</p>
             </div> -->
-        </div>
-        <h2 class="works-title">Works</h2>
-        <div class="works-column-1">
-            <div class="work-1">
-                <a href="https://zeruku.booth.pm/items/4367161" target="_blank"><img class="work-1-banner"
-                        src="./images/dmfv.png" alt="" /></a>
-                <p class="work-1-title">
-                    VRChatからDiscordを<br />ミュートするやつ
-                </p>
             </div>
-            <div class="work-2">
-                <a href="https://greasyfork.org/ja/scripts/479322-booth%E3%81%AE%E8%B3%BC%E5%85%A5%E5%B1%A5%E6%AD%B4%E3%81%8B%E3%82%89%E7%B4%AF%E8%A8%88%E6%95%A3%E8%B2%A1%E9%A1%8D%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB"
-                    target="_blank">
-                    <img src="./images/booth-tool.png" alt="" class="work-2-banner" />
-                </a>
-                <p class="work-2-title">
-                    Boothの購入履歴から<br />散財額を計算するツール
-                </p>
+            <h2 class="works-title">Works</h2>
+            <div class="works-column-1">
+                <div class="work-1">
+                    <a
+                        href="https://zeruku.booth.pm/items/4367161"
+                        target="_blank"
+                        ><img
+                            class="work-1-banner"
+                            src="./images/dmfv.png"
+                            alt=""
+                    /></a>
+                    <p class="work-1-title">
+                        VRChatからDiscordを<br />ミュートするやつ
+                    </p>
+                </div>
+                <div class="work-2">
+                    <a
+                        href="https://greasyfork.org/ja/scripts/479322-booth%E3%81%AE%E8%B3%BC%E5%85%A5%E5%B1%A5%E6%AD%B4%E3%81%8B%E3%82%89%E7%B4%AF%E8%A8%88%E6%95%A3%E8%B2%A1%E9%A1%8D%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB"
+                        target="_blank"
+                    >
+                        <img
+                            src="./images/booth-tool.png"
+                            alt=""
+                            class="work-2-banner"
+                        />
+                    </a>
+                    <p class="work-2-title">
+                        Boothの購入履歴から<br />散財額を計算するツール
+                    </p>
+                </div>
+                <!-- <div class="work-3">
+                    <img
+                        src="./images/python.png"
+                        alt=""
+                        class="work-3-banner"
+                    />
+                    <p class="work-3-title"></p>
+                </div>
+                <div class="work-4">
+                    <img
+                        src="./images/python.png"
+                        alt=""
+                        class="work-4-banner"
+                    />
+                    <p class="work-4-title"></p>
+                </div>
+                <div class="work-5">
+                    <img
+                        src="./images/python.png"
+                        alt=""
+                        class="work-5-banner"
+                    />
+                    <p class="work-5-title"></p>
+                </div> -->
             </div>
-            <div class="work-3">
-                <img src="./images/python.png" alt="" class="work-3-banner" />
-                <p class="work-3-title"> </p>
-            </div>
-            <div class="work-4">
-                <img src="./images/python.png" alt="" class="work-4-banner" />
-                <p class="work-4-title"> </p>
-            </div>
-            <div class="work-5">
-                <img src="./images/python.png" alt="" class="work-5-banner" />
-                <p class="work-5-title"> </p>
-            </div>
-        </div>
-    </main>
-</body>
-
+        </main>
+    </body>
 </html>
