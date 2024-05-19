@@ -80,6 +80,24 @@ header #clock {
     width: 22.9375%
 }
 
+.status-icon {
+    border-radius: 50%;
+    background-color: #67c23a;
+    height: 35px;
+    width: 35px;
+    margin-top: 35px;
+    margin-left: -60px;
+    margin-bottom: -65px;
+}
+
+.twitter-icon {
+    border-radius: 50%;
+    background-color: #FFF;
+    height: 35px;
+    width: 35px;
+    margin-left: -60px;
+    margin-bottom: -65px;
+}
 
 .status-card .banner {
     border-top-left-radius: 15px;
@@ -103,6 +121,10 @@ header #clock {
     padding: 0 50px 20px 125px;
     color: #bababa;
     font-size: 30px;
+}
+
+.status {
+    margin-bottom: -30px;
 }
 
 .status,
@@ -173,7 +195,16 @@ header #clock {
 }
 
 .instance-id {
-    padding-left: 40px;
+    margin-top: -35px;
+    padding-left: 50px;
+}
+
+.instance-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0- 0 0 0;
 }
 
 .language-card,
