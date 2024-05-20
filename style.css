@@ -1,6 +1,6 @@
 @font-face {
     font-family: "源泉丸ゴシック";
-    src: url("./fonts/GenSenRounded-B.ttc");
+    src: url("https://github.com/ButTaiwan/gensen-font/raw/master/ttc/GenSenRounded-B.ttc");
 }
 
 body {
@@ -159,6 +159,8 @@ header #clock {
     width: 48.5%;
     padding: 20px 35px;
     color: #bababa;
+    line-height: 2em;
+    letter-spacing: 0.05em;
 }
 
 .bio-title,
