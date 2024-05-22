@@ -1,6 +1,6 @@
 @font-face {
     font-family: "源泉丸ゴシック";
-    src: url("/fonts/GenSenRounded-B.ttc");
+    src: url("/fonts/GenSenRounded-B.ttc") format("truetype");
 }
 
 body {
